@@ -20,6 +20,7 @@ public class ComsumerController {
     @HystrixCommand(defaultFallback = "def")
     public String test(){
         System.out.println("git测试");
+        System.out.println("github测试");
         String result = restTemplate.getForObject("http://SERVER-PRO/user/text/12", String.class);
         return result;
     }
