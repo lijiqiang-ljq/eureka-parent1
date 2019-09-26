@@ -14,6 +14,7 @@ public class ComsumerController {
     @Autowired
     private RestTemplate restTemplate;
 
+
     @RequestMapping(value = "/test")
     @ResponseBody
     @HystrixCommand(defaultFallback = "def")
